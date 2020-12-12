@@ -13,6 +13,10 @@
 		B11519BC258505A000E61937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11519BA258505A000E61937 /* Main.storyboard */; };
 		B11519BE258505A400E61937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11519BD258505A400E61937 /* Assets.xcassets */; };
 		B11519C1258505A400E61937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11519BF258505A400E61937 /* LaunchScreen.storyboard */; };
+		B11519CE2585063300E61937 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11519CD2585063300E61937 /* Message.swift */; };
+		B11519E725850FC000E61937 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11519E625850FC000E61937 /* RegisterViewController.swift */; };
+		B11519ED258536F300E61937 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11519EC258536F300E61937 /* LoginViewController.swift */; };
+		B11519F02585372D00E61937 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11519EF2585372D00E61937 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B11519BD258505A400E61937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B11519C0258505A400E61937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B11519C2258505A400E61937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B11519CD2585063300E61937 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B11519E625850FC000E61937 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B11519EC258536F300E61937 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B11519EF2585372D00E61937 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,42 @@
 			children = (
 				B11519B4258505A000E61937 /* AppDelegate.swift */,
 				B11519B6258505A000E61937 /* SceneDelegate.swift */,
-				B11519B8258505A000E61937 /* ViewController.swift */,
-				B11519BA258505A000E61937 /* Main.storyboard */,
+				B11519CC2585060300E61937 /* Model */,
+				B11519C9258505CC00E61937 /* View */,
+				B11519CA258505E100E61937 /* Controller */,
 				B11519BD258505A400E61937 /* Assets.xcassets */,
 				B11519BF258505A400E61937 /* LaunchScreen.storyboard */,
 				B11519C2258505A400E61937 /* Info.plist */,
 			);
 			path = ChatMe;
+			sourceTree = "<group>";
+		};
+		B11519C9258505CC00E61937 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B11519BA258505A000E61937 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B11519CA258505E100E61937 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B11519B8258505A000E61937 /* ViewController.swift */,
+				B11519EF2585372D00E61937 /* ChatViewController.swift */,
+				B11519E625850FC000E61937 /* RegisterViewController.swift */,
+				B11519EC258536F300E61937 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B11519CC2585060300E61937 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B11519CD2585063300E61937 /* Message.swift */,
+			);
+			name = Model;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11519ED258536F300E61937 /* LoginViewController.swift in Sources */,
 				B11519B9258505A000E61937 /* ViewController.swift in Sources */,
+				B11519E725850FC000E61937 /* RegisterViewController.swift in Sources */,
+				B11519F02585372D00E61937 /* ChatViewController.swift in Sources */,
+				B11519CE2585063300E61937 /* Message.swift in Sources */,
 				B11519B5258505A000E61937 /* AppDelegate.swift in Sources */,
 				B11519B7258505A000E61937 /* SceneDelegate.swift in Sources */,
 			);
